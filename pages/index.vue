@@ -1,34 +1,37 @@
 <template>
   <div>
-    <header class="text-center bg-primary text-white py-5">
+    <header class="name text-center bg-primary text-white py-5">
       <nav>
         <ul class="nav-menu">
           <li><a href="#about" class="text-white mx-2">About</a></li>
           <li><a href="#experience" class="text-white mx-2">Experience</a></li>
           <li><a href="#education" class="text-white mx-2">Education</a></li>
+          <li><a href="#tech" class="text-white mx-2">Tech Stack</a></li>
         </ul>
+        <h1>CAKRA PRADIPTA KUNTARA</h1>
+        <p>D3 Brawijaya University</p>
+        <a href="https://github.com" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
       </nav>
     </header>
-    <section id="name" class="name text-center bg-primary text-white py-5">
-      <h1>CAKRA PRADIPTA KUNTARA</h1>
-      <p>D3 Brawijaya University</p>
-      <a href="https://github.com" class="text-white mx-2"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
-    </section>
     <About />
     <Experience />
     <Education />
-    <Projects />
+    <Skills />
     <button v-show="showBackToTop" class="back-to-top" @click="scrollToTop">Kembali ke Atas</button>
   </div>
 </template>
 
 <script>
+import Projects from '~/components/Projects.vue';
+import Skills from '~/components/Skills.vue';
+
 export default {
   components: {
     About: () => import('@/components/About.vue'),
     Experience: () => import('@/components/Experience.vue'),
     Education: () => import('@/components/Education.vue'),
+    Skills: () => import('@/components/Skills.vue'),
   },
   data() {
     return {
