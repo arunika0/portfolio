@@ -22,7 +22,7 @@ export default {
                 {
                     company: 'PSP FPIK UB',
                     role: 'Website Administrator',
-                    duration: 'Juli 2021 - Saar ini',
+                    duration: 'Juli 2021 - Saat ini',
                     jobdesk: [
                         'Mengkonfigurasi plugin website agar sesuai',
                         'Mengkonfigurasi tema agar website memiliki tampilan yang baik',
