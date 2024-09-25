@@ -10,8 +10,7 @@
         </ul>
         <h1>CAKRA PRADIPTA KUNTARA</h1>
         <p>D3 Brawijaya University</p>
-        <a href="https://github.com" class="text-white mx-2"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:cakra@arxan.app" class="btn-email">Email Me</a>
       </nav>
     </header>
     <About />
@@ -23,9 +22,6 @@
 </template>
 
 <script>
-import Projects from '~/components/Projects.vue';
-import Skills from '~/components/Skills.vue';
-
 export default {
   components: {
     About: () => import('@/components/About.vue'),
@@ -81,6 +77,21 @@ export default {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+.btn-email {
+  display: inline-block;
+  background-color: #36bff5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-email:hover {
+  background-color: #749daa;
 }
 
 .back-to-top {
