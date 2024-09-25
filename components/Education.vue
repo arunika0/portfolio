@@ -1,5 +1,5 @@
 <template>
-    <section class="container my-5">
+    <section class="container my-5" id="education">
       <h2>Education</h2>
       <ul class="list-group">
         <li class="list-group-item">

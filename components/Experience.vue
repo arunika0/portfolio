@@ -1,5 +1,5 @@
 <template>
-    <section class="container my-5">
+    <section class="container my-5" id="experience">
         <h2>Experience</h2>
         <div class="card mb-3" v-for="(exp, index) in experiences" :key="index">
             <div class="card-body">
